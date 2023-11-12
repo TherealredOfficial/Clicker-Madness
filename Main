@@ -94,7 +94,7 @@ NoClip.BorderSizePixel = 0
 NoClip.Position = UDim2.new(0.0963855386, 0, 0.312958449, 0)
 NoClip.Size = UDim2.new(0, 200, 0, 50)
 NoClip.Font = Enum.Font.SourceSans
-NoClip.Text = "AutoRebirth(Soon)"
+NoClip.Text = "AutoRebirth"
 NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
 NoClip.TextSize = 33.000
 
