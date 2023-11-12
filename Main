@@ -116,12 +116,40 @@ local selectedRebirthOption = 1 -- Default to the first option
 
 local function autoRebirth()
     local selectedOptionValue = rebirthOptions[selectedRebirthOption]
-    rebirthRemote:FireServer(selectedOptionValue)
+    local args = {
+        [1] = selectedOptionValue
+    }
+    rebirthRemote:FireServer(unpack(args))
 end
 
 AutoRebirth.MouseButton1Click:Connect(autoRebirth)
 
+-- Repeat the process for additional rebirth options
+-- Example: Rebirth option 2
+local RebirthOption2 = Frame:WaitForChild("RebirthOption2Button") -- Replace with the actual button name
+RebirthOption2.MouseButton1Click:Connect(function()
+    selectedRebirthOption = 2
+    autoRebirth()
+end)
+
+-- Example: Rebirth option 3
+local RebirthOption3 = Frame:WaitForChild("RebirthOption3Button") -- Replace with the actual button name
+RebirthOption3.MouseButton1Click:Connect(function()
+    selectedRebirthOption = 3
+    autoRebirth()
+end)
+
+-- Repeat the process for more rebirth options
+-- Example: Rebirth option 4
+local RebirthOption4 = Frame:WaitForChild("RebirthOption4Button") -- Replace with the actual button name
+RebirthOption4.MouseButton1Click:Connect(function()
+    selectedRebirthOption = 4
+    autoRebirth()
+end)
+
+-- ... (repeat as needed for more options)
 -- ... (rest of your code)
+
 
 
 UICorner_4.Parent = NoClip
