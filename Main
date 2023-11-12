@@ -100,6 +100,28 @@ NoClip.TextSize = 33.000
 
 UICorner_4.Parent = NoClip
 
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RebirthService = ReplicatedStorage:WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("RebirthService")
+local BuyRebirths = RebirthService:WaitForChild("BuyRebirths")
+
+local args = {
+    [1] = 1000
+}
+
+local isAutoRebirthEnabled = false
+
+local function toggleAutoRebirth()
+    isAutoRebirthEnabled = not isAutoRebirthEnabled
+
+    while isAutoRebirthEnabled do
+        BuyRebirths:FireServer(unpack(args))
+        wait(1)
+    end
+end
+
+NoClip.MouseButton1Click:Connect(toggleAutoRebirth)
+
+
 SuperSpeed.Name = "Super Speed"
 SuperSpeed.Parent = Frame
 SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 142, 142)
