@@ -34,7 +34,7 @@ Frame.Size = UDim2.new(0, 249, 0, 409)
 UICorner.CornerRadius = UDim.new(0, 9)
 UICorner.Parent = Frame
 
-FEScripts.Name = "FE Scripts"
+FEScripts.Name = "Clicker Madness"
 FEScripts.Parent = Frame
 FEScripts.BackgroundColor3 = Color3.fromRGB(255, 93, 93)
 FEScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
