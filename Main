@@ -98,6 +98,32 @@ NoClip.Text = "AutoRebirth(Soon)"
 NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
 NoClip.TextSize = 33.000
 
+-- ... (your existing code)
+
+local AutoRebirth = Frame:WaitForChild("NoClip") -- Assuming NoClip is already part of Frame
+
+local rebirthRemote = game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("RebirthService"):WaitForChild("BuyRebirths")
+
+-- Example: Additional rebirth options
+local rebirthOptions = {
+    [1] = 1000,
+    [2] = 2000,
+    [3] = 5000,
+    -- Add more options as needed
+}
+
+local selectedRebirthOption = 1 -- Default to the first option
+
+local function autoRebirth()
+    local selectedOptionValue = rebirthOptions[selectedRebirthOption]
+    rebirthRemote:FireServer(selectedOptionValue)
+end
+
+AutoRebirth.MouseButton1Click:Connect(autoRebirth)
+
+-- ... (rest of your code)
+
+
 UICorner_4.Parent = NoClip
 
 SuperSpeed.Name = "Super Speed"
