@@ -67,16 +67,19 @@ UICorner_3.Parent = Fly
 local player = game.Players.LocalPlayer
 local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
 
-local isFlying = false
+local isAutoClickerEnabled = false
+local clickRemote = game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("ClickService"):WaitForChild("Click")
 
-local function toggleFlight()
-    if humanoid then
-        isFlying = not isFlying
-        humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, isFlying)
+local function toggleAutoClicker()
+    isAutoClickerEnabled = not isAutoClickerEnabled
+
+    while isAutoClickerEnabled do
+        clickRemote:FireServer(1)
+        wait(0)
     end
 end
 
-Fly.MouseButton1Click:Connect(toggleFlight)
+Fly.MouseButton1Click:Connect(toggleAutoClicker)
 
 
 
