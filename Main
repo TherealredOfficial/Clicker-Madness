@@ -131,7 +131,7 @@ SuperSpeed.BorderSizePixel = 0
 SuperSpeed.Position = UDim2.new(0.0963855386, 0, 0.464547664, 0)
 SuperSpeed.Size = UDim2.new(0, 200, 0, 50)
 SuperSpeed.Font = Enum.Font.SourceSans
-SuperSpeed.Text = "Super Speed"
+SuperSpeed.Text = "Soon..."
 SuperSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
 SuperSpeed.TextSize = 33.000
 
@@ -145,7 +145,7 @@ InfiniteYield.BorderSizePixel = 0
 InfiniteYield.Position = UDim2.new(0.0963855386, 0, 0.611246943, 0)
 InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
 InfiniteYield.Font = Enum.Font.SourceSans
-InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.Text = "Soon..."
 InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
 InfiniteYield.TextSize = 33.000
 
@@ -159,7 +159,7 @@ TPTool.BorderSizePixel = 0
 TPTool.Position = UDim2.new(0.0963855386, 0, 0.765281081, 0)
 TPTool.Size = UDim2.new(0, 200, 0, 50)
 TPTool.Font = Enum.Font.SourceSans
-TPTool.Text = "TP Tool"
+TPTool.Text = "Soon..."
 TPTool.TextColor3 = Color3.fromRGB(0, 0, 0)
 TPTool.TextSize = 33.000
 
