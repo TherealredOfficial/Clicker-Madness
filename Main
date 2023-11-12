@@ -100,9 +100,6 @@ NoClip.TextSize = 33.000
 
 UICorner_4.Parent = NoClip
 
-
-UICorner_4.Parent = NoClip
-
 SuperSpeed.Name = "Super Speed"
 SuperSpeed.Parent = Frame
 SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 142, 142)
