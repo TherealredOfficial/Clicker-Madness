@@ -34,7 +34,7 @@ Frame.Size = UDim2.new(0, 249, 0, 409)
 UICorner.CornerRadius = UDim.new(0, 9)
 UICorner.Parent = Frame
 
-FEScripts.Name = "Clicker Madness"
+FEScripts.Name = "FE Scripts"
 FEScripts.Parent = Frame
 FEScripts.BackgroundColor3 = Color3.fromRGB(255, 93, 93)
 FEScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -42,7 +42,7 @@ FEScripts.BorderSizePixel = 0
 FEScripts.Position = UDim2.new(-0.00401606411, 0, 0, 0)
 FEScripts.Size = UDim2.new(0, 249, 0, 50)
 FEScripts.Font = Enum.Font.DenkOne
-FEScripts.Text = "FE Scripts"
+FEScripts.Text = "Clicker Madness"
 FEScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 FEScripts.TextSize = 33.000
 
